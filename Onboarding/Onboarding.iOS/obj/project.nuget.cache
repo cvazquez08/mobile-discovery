@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "xhS+a5CAC3mUlc66UpRrkRSSDIIg04T93ROzN+Q74DNyWz9yfMJTCI7orXcYZyPV6wPRxW7k2NrQKDJFgcwiZA==",
+  "success": true,
+  "projectFilePath": "/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding.iOS/Onboarding.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/chris.vazquez/.nuget/packages/fody/6.3.0/fody.6.3.0.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/propertychanged.fody/3.3.1/propertychanged.fody.3.3.1.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/xamarin.forms/5.0.0.1874/xamarin.forms.5.0.0.1874.nupkg.sha512"
+  ],
+  "logs": []
+}

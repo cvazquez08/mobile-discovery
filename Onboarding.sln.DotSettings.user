@@ -1,0 +1,30 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=881D7DA7_002DDB83_002D45A1_002D8410_002D4FB29FE8E753_002Fd_003APages_002Ff_003AMenuPage_002Examl/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b2f939b3_002D8a62_002D4ef4_002D9ab2_002D8b917f1cb200/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Constructor_ValidModel_ExpectPresentation" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetItemViewModelTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetGroupViewModelTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.Builders.BudgetBuilderTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.BudgetGroupPresentationTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.BudgetGroupTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.TitledIconViewModelTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.OnboardingProfileViewModelTest.Constructor_ValidModel_ExpectPresentation&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.OnboardingProfileViewModelTest.LogSelectedGoals_ExpectGoalsSentToSync&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=efeff576_002D1e51_002D4424_002D84af_002Da0106b5c1f4a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Constructor_ValidParameters_ExpectAssignment" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.TitledIconTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.BudgetGroupTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.BudgetItemTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A20834D7-23A6-47C5-A653-3E445DEDD9E8::.NETCoreApp,Version=v3.1::Onboarding.Models.Test.BudgetGroupPresentationTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetItemViewModelTest.Amount_NegativeInBudgetItem_ExpectPositiveString&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetItemViewModelTest.Amount_Set_ExpectValueAsString&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetItemViewModelTest.Amount_Set_ExpectPropertyChanged&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::569564BB-CDD2-409D-A89C-7A323A500F0F::.NETCoreApp,Version=v3.1::Onboarding.ViewModels.Test.BudgetItemViewModelTest.Name_Set_ExpectValueAsString&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	</wpf:ResourceDictionary>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Onboarding.Views.OneButtonContentView">
+    <ContentView.Content>
+        <Grid RowDefinitions="1*, Auto">
+        
+            <!-- main content (dynamically inserted by different pages) -->
+            <ScrollView>
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <ContentView
+                        x:Name="mainContent"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                </StackLayout>
+            </ScrollView>
+            
+            <Button
+                Margin="24, 24"
+                Padding="0"
+                BackgroundColor="Transparent"
+                FontSize="20"
+                HeightRequest="25"
+                HorizontalOptions="Start"
+                Text="X"
+                TextColor="{StaticResource OnboardingBlue}"
+                VerticalOptions="Start"
+                WidthRequest="25"/>
+            
+            <StackLayout
+                Grid.Row="1"
+                Padding="20,32"
+                BackgroundColor="White"
+                VerticalOptions="EndAndExpand">
+                <Frame Padding="0">
+                    <Grid>
+                        <Button
+                            x:Name="continueButton"
+                            Margin="0"
+                            Padding="0"
+                            BackgroundColor="{StaticResource OnboardingBlue}"
+                            Clicked="ContinueClicked"
+                            HeightRequest="36"
+                            Text="Continue"
+                            TextColor="White">
+                            <Button.Triggers>
+                                <Trigger TargetType="Button" Property="IsEnabled" Value="False">
+                                    <Setter Property="BackgroundColor" Value="{StaticResource OnboardingLightGray}" />
+                                </Trigger>
+                            </Button.Triggers>
+                        </Button>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

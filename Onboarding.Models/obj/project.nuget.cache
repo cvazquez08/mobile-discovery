@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "AUTHEiTw0r/dB89nOvGUOazxtGew+Fp8OuFL0UGDddYdCcweG78MMtaaqMCp+wnVhJOQrNMxz1OnAfmrcRjgbQ==",
+  "success": true,
+  "projectFilePath": "/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/Onboarding.Models.csproj",
+  "expectedPackageFiles": [
+    "/Users/chris.vazquez/.nuget/packages/fody/6.3.0/fody.6.3.0.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/chris.vazquez/.nuget/packages/propertychanged.fody/3.3.1/propertychanged.fody.3.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

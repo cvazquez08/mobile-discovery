@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Onboarding.Pages.IntroPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Onboarding.Views"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <views:OneButtonContentView x:Name="contentView">
+            <views:OneButtonContentView.MainContent>
+                <!--  main content  -->
+                <StackLayout Padding="30" VerticalOptions="CenterAndExpand">
+                    <!--  header image  -->
+                    <Image
+                        HeightRequest="60"
+                        Source="widget_everydollar_logo"
+                        WidthRequest="60" />
+
+                    <!--  Caption  -->
+                    <Label
+                        Margin="0,16,0,0"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Hey, Coder!"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Welcome to EveryDollar!"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+
+                    <!--  Details  -->
+                    <Label
+                        Margin="0,24,0,0"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="Let's start by looking at your money goals.  Then we'll help you build a custom budget so you can crush them all!" />
+                </StackLayout>
+            </views:OneButtonContentView.MainContent>
+        </views:OneButtonContentView>
+    </ContentPage.Content>
+</ContentPage>

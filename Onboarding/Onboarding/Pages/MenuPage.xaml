@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Onboarding.Pages.MenuPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:Onboarding.Converters"
+    xmlns:views="clr-namespace:Onboarding.Views"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="false">
+
+    <views:OneButtonContentView x:Name="contentView">
+        <views:OneButtonContentView.MainContent>
+
+            <!--  Main content layout  -->
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                <!--  Caption  -->
+                <Label
+                    Margin="0,40,0,0"
+                    FontSize="22"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Well done, Coder!"
+                    TextColor="Black"
+                    VerticalOptions="Start" />
+
+                <Label
+                    Margin="0,4,0,28"
+                    FontSize="16"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="You completed the first step."
+                    TextColor="Gray"
+                    VerticalOptions="Start" />
+
+                <!--  Menu  -->
+                <StackLayout
+                    x:Name="collectionView"
+                    Margin="0,1,0,0"
+                    BindableLayout.ItemsSource="{Binding OnboardingSteps}"
+                    HeightRequest="200"
+                    HorizontalOptions="CenterAndExpand"
+                    Spacing="0"
+                    VerticalOptions="Center"
+                    WidthRequest="400">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout
+                                Padding="24,8,24,8"
+                                BackgroundColor="White"
+                                HeightRequest="42"
+                                MinimumHeightRequest="42"
+                                Orientation="Horizontal"
+                                VerticalOptions="Start">
+
+                                <Grid
+                                    Margin="0"
+                                    Padding="0"
+                                    HeightRequest="40"
+                                    WidthRequest="40">
+
+                                    <!--  Backgroudnd circle  -->
+                                    <BoxView
+                                        BackgroundColor="{StaticResource OnboardingLightGray}"
+                                        CornerRadius="20"
+                                        HorizontalOptions="FillAndExpand"
+                                        IsVisible="{Binding IsSelected}"
+                                        VerticalOptions="Center" />
+
+                                    <!--  completed icon  -->
+                                    <Image
+                                        HeightRequest="25"
+                                        HorizontalOptions="Center"
+                                        IsVisible="{Binding IsCompleted}"
+                                        Source="icon_green_check.png"
+                                        VerticalOptions="Center"
+                                        WidthRequest="25" />
+
+                                    <!--  selected icon  -->
+                                    <Image
+                                        HeightRequest="20"
+                                        HorizontalOptions="Center"
+                                        IsVisible="{Binding IsSelected}"
+                                        Source="{Binding IconSource}"
+                                        VerticalOptions="Center"
+                                        WidthRequest="20" />
+
+                                    <!--  pending icon  -->
+                                    <Image
+                                        HeightRequest="20"
+                                        HorizontalOptions="Center"
+                                        IsVisible="{Binding IsPending}"
+                                        Source="{Binding IconGraySource}"
+                                        VerticalOptions="Center"
+                                        WidthRequest="20" />
+
+                                </Grid>
+
+                                <StackLayout
+                                    Margin="16,0,0,0"
+                                    Spacing="0"
+                                    VerticalOptions="Center">
+                                    <Label
+                                        Margin="0"
+                                        Padding="0"
+                                        FontSize="12"
+                                        HorizontalOptions="Start"
+                                        IsVisible="{Binding IsSelected}"
+                                        Text="UP NEXT"
+                                        TextColor="{StaticResource OnboardingBlue}"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
+                                    <Label
+                                        Margin="0"
+                                        Padding="0"
+                                        FontAttributes="{Binding NameFontAttributes, Converter={converters:FontAttributesConverter}}"
+                                        FontSize="15"
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Name}"
+                                        TextColor="{Binding NameColor, FallbackValue='#888888', Converter={converters:ColorKeyConverter}}"
+                                        TextDecorations="{Binding NameDecorations, Converter={converters:TextDecorationsConverter}}"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Label
+                                        FontSize="15"
+                                        HorizontalOptions="EndAndExpand"
+                                        IsVisible="{Binding IsCompleted}"
+                                        Text="{Binding Amount}"
+                                        TextColor="#888888"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
+
+                                    <Label
+                                        FontSize="24"
+                                        HorizontalOptions="EndAndExpand"
+                                        IsVisible="{Binding IsSelected}"
+                                        Text="&gt;"
+                                        TextColor="{StaticResource OnboardingBlue}"
+                                        VerticalOptions="Center"
+                                        VerticalTextAlignment="Center" />
+                                </Grid>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </StackLayout>
+        </views:OneButtonContentView.MainContent>
+    </views:OneButtonContentView>
+
+</ContentPage>

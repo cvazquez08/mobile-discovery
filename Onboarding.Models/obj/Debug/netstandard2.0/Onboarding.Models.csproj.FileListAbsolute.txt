@@ -1,0 +1,10 @@
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/bin/Debug/netstandard2.0/Onboarding.Models.deps.json
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/bin/Debug/netstandard2.0/Onboarding.Models.dll
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/bin/Debug/netstandard2.0/Onboarding.Models.pdb
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.csprojAssemblyReference.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.AssemblyInfoInputs.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.AssemblyInfo.cs
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.csproj.CoreCompileInputs.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.csproj.Fody.CopyLocal.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.dll
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.Models/obj/Debug/netstandard2.0/Onboarding.Models.pdb

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Onboarding.Views.BudgetItemView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Onboarding.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Onboarding.ViewModels;assembly=Onboarding.ViewModels"
+    x:DataType="viewmodels:BudgetItemViewModel"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout
+            Margin="0,0,0,1"
+            Padding="16,8,16,8"
+            BackgroundColor="White"
+            Orientation="Horizontal"
+            VerticalOptions="Start">
+
+            <controls:NoUnderlineEntry
+                BackgroundColor="Transparent"
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="{Binding Name}"
+                TextColor="{StaticResource OnboardingBatmansVeryDarkGray}"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center" />
+
+            <controls:NoUnderlineCurrencyEntry
+                BackgroundColor="{StaticResource OnboardingLightGray}"
+                FontSize="18"
+                HorizontalOptions="EndAndExpand"
+                HorizontalTextAlignment="End"
+                Keyboard="Numeric"
+                Placeholder="$0.00"
+                ProcessedText="{Binding Amount, Mode=TwoWay}"
+                TextColor="{StaticResource OnboardingBlue}"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center"
+                WidthRequest="120" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

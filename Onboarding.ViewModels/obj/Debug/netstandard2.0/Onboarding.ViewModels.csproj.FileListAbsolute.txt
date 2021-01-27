@@ -1,0 +1,13 @@
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/bin/Debug/netstandard2.0/Onboarding.ViewModels.deps.json
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/bin/Debug/netstandard2.0/Onboarding.ViewModels.dll
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/bin/Debug/netstandard2.0/Onboarding.ViewModels.pdb
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/bin/Debug/netstandard2.0/Onboarding.Models.dll
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/bin/Debug/netstandard2.0/Onboarding.Models.pdb
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.csprojAssemblyReference.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.AssemblyInfoInputs.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.AssemblyInfo.cs
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.csproj.CoreCompileInputs.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.csproj.Fody.CopyLocal.cache
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.csproj.CopyComplete
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.dll
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding.ViewModels/obj/Debug/netstandard2.0/Onboarding.ViewModels.pdb
