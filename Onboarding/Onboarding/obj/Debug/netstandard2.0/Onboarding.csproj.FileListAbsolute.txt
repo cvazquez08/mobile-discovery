@@ -26,3 +26,5 @@
 /Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding/obj/Debug/netstandard2.0/Onboarding.csproj.CopyComplete
 /Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding/obj/Debug/netstandard2.0/Onboarding.dll
 /Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding/obj/Debug/netstandard2.0/Onboarding.pdb
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding/obj/Debug/netstandard2.0/Pages/BasicExpensesIntroPage.xaml.g.cs
+/Users/chris.vazquez/RiderProjects/Onboarding/Onboarding/Onboarding/obj/Debug/netstandard2.0/Views/SectionIntroView.xaml.g.cs
