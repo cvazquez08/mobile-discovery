@@ -3,11 +3,17 @@
     x:Class="Onboarding.Pages.IncomePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="clr-namespace:Onboarding.Views"
     BackgroundColor="{StaticResource OnboardingLightGray}"
-    NavigationPage.HasNavigationBar="false">
+    NavigationPage.HasNavigationBar="false"
+    mc:Ignorable="d">
     <ContentPage.Content>
-        <views:OneButtonContentView x:Name="contentView">
+        <views:OneButtonContentView
+            x:Name="contentView"
+            ContinueButtonColor="{StaticResource OnboardingGreen}"
+            IsBudgetSummaryVisible="false">
             <views:OneButtonContentView.MainContent>
                 <views:BudgetGroupView/>
             </views:OneButtonContentView.MainContent>

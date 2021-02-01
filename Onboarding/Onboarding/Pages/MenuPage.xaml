@@ -3,13 +3,18 @@
     x:Class="Onboarding.Pages.MenuPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:converters="clr-namespace:Onboarding.Converters"
-    xmlns:views="clr-namespace:Onboarding.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:views="clr-namespace:Onboarding.Views" xmlns:converters="clr-namespace:Onboarding.Converters"
     BackgroundColor="White"
-    NavigationPage.HasNavigationBar="false">
-
-    <views:OneButtonContentView x:Name="contentView">
-        <views:OneButtonContentView.MainContent>
+    NavigationPage.HasNavigationBar="false"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <views:OneButtonContentView
+            x:Name="contentView"
+            ContinueButtonColor="{StaticResource OnboardingGreen}"
+            IsBudgetSummaryVisible="{Binding IsBudgetSummaryVisible}">
+            <views:OneButtonContentView.MainContent>
 
             <!--  Main content layout  -->
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -145,7 +150,10 @@
                     </BindableLayout.ItemTemplate>
                 </StackLayout>
             </StackLayout>
-        </views:OneButtonContentView.MainContent>
-    </views:OneButtonContentView>
+
+
+            </views:OneButtonContentView.MainContent>
+        </views:OneButtonContentView>
+    </ContentPage.Content>
 
 </ContentPage>

@@ -3,51 +3,55 @@
     x:Class="Onboarding.Pages.IntroPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="clr-namespace:Onboarding.Views"
-    BackgroundColor="White"
-    NavigationPage.HasNavigationBar="false">
-   <ContentPage.Content>
-       <!-- ContinueButtonColor="{StaticResource OnboardingBlue }" -->
-       <views:OneButtonContentView x:Name="contentView">
-        <views:OneButtonContentView.MainContent>
-           <!-- Main content layout -->
-           <StackLayout
-               Padding="30"
-               HorizontalOptions="Center"
-               Spacing="0"
-               VerticalOptions="Center">
-               
-               <!-- header image -->
-               <Image
-                   HeightRequest="60"
-                   Source="widget_everydollar_logo.png" />
-               
-               <!-- caption -->
-               <Label
-                   Margin="0,16,0,0"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   HorizontalOptions="Center"
-                   Text="Hey Chris!"
-                   TextColor="Black"
-                   VerticalOptions="Center"/>
-               <Label
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   HorizontalOptions="CenterAndExpand"
-                   Text="Welcome to EveryDollar"
-                   TextColor="Black"
-                   VerticalOptions="Center" />
-               
-               <!-- details -->
-               <Label
-                   Margin="0, 24, 0, 0"
-                   FontSize="24"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   Text="Let's start by looking at your money goals. Then we'll help you build a custom budget so you can crush them all!"></Label>
-           </StackLayout>
-       </views:OneButtonContentView.MainContent>
-       </views:OneButtonContentView>
-   </ContentPage.Content>
+    NavigationPage.HasNavigationBar="false"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <views:OneButtonContentView x:Name="contentView" ContinueButtonColor="{StaticResource OnboardingBlue}">
+            <views:OneButtonContentView.MainContent>
+                <!--  Main content layout  -->
+                <StackLayout
+                    Padding="30"
+                    HorizontalOptions="Center"
+                    Spacing="0"
+                    VerticalOptions="Center">
+
+                    <!--  header image  -->
+                    <Image
+                        HeightRequest="60"
+                        Source="widget_everydollar_logo.png"
+                        WidthRequest="60" />
+
+                    <!--  Caption  -->
+                    <Label
+                        Margin="0,16,0,0"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Hey, Coder!"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Welcome to EveryDollar!"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+
+                    <!--  Details  -->
+                    <Label
+                        Margin="0,24,0,0"
+                        FontSize="24"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="Let's start by looking at your money goals.  Then we'll help you build a custom budget so you can crush them all!" />
+
+                </StackLayout>
+
+            </views:OneButtonContentView.MainContent>
+        </views:OneButtonContentView>
+    </ContentPage.Content>
 </ContentPage>

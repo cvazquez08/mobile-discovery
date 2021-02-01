@@ -13,7 +13,7 @@ namespace Onboarding.Pages
             InitializeComponent();
             BindingContext = budgetGroup;
 
-            contentView.ContinueButtonAction = async () => await Navigation.PushAsync(new IntroPage());
+            contentView.ContinueButtonAction = async () => await Navigation.PushAsync(new BasicExpensesIntroPage(Dependencies.ProfileViewModel.Budget.BasicExpensesDisplayGroup));
         }
     }
 }

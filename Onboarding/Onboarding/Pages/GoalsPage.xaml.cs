@@ -1,10 +1,6 @@
-using PropertyChanged;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+using Onboarding.ViewModels;
 using System.Linq;
 using System.Threading.Tasks;
-using Onboarding.ViewModels;
 using Xamarin.Forms;
 
 namespace Onboarding.Pages
@@ -12,7 +8,6 @@ namespace Onboarding.Pages
     public partial class GoalsPage : ContentPage
     {
         OnboardingProfileViewModel onboardingProfileViewModel;
-
         public GoalsPage(OnboardingProfileViewModel onboardingProfileViewModel)
         {
             InitializeComponent();
@@ -29,17 +24,17 @@ namespace Onboarding.Pages
             base.OnAppearing();
             UpdateContinueButton();
         }
-        
-        //TODO: Likely belongs in subview
-        //TODO: unify this code acroess Status and Goals
+
+        // TODO: likely belongs in subview
+        // TODO: Unify this code across Status and Goals
         private void SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedIcons = e.CurrentSelection.Cast<TitledIconViewModel>().ToList();
-            
-            // only set selected to true for items the users has selected in the local view
+
+            // Only set selected to true for items the users has selected in the local view
             onboardingProfileViewModel.Goals.ToList().ForEach(icon => icon.IsSelected = selectedIcons.Contains(icon));
-            
-            // only enable the continue button if more than one item is selected
+
+            // Only enable the continue button if more than one item is selected
             contentView.ContinueButton.IsEnabled = selectedIcons.Count >= 1;
         }
 
@@ -47,12 +42,11 @@ namespace Onboarding.Pages
         {
             onboardingProfileViewModel.LogSelectedGoals();
 
-            await Navigation.PushAsync(new StatusPage(onboardingProfileViewModel));
+            await Navigation.PushAsync(new StatusPage(onboardingProfileViewModel));            
         }
-        
-        //TODO: unifiy this code accress Status and Gaols
-        private void UpdateContinueButton() => contentView.ContinueButton.IsEnabled =
-            onboardingProfileViewModel.Goals.Any(item => item.IsSelected);
+
+        // TODO: Unify this code across Status and Goals
+        private void UpdateContinueButton()
+            => contentView.ContinueButton.IsEnabled = onboardingProfileViewModel.Goals.Any(item => item.IsSelected);
     }
-        
 }

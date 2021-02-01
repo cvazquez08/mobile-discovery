@@ -11,8 +11,7 @@
     NavigationPage.HasNavigationBar="false"
     mc:Ignorable="d">
     <ContentPage.Content>
-        <!-- ContinueButtonColor="{Binding ColorKey, Converter={converters:ColorKeyConverter}}" -->
-        <views:OneButtonContentView x:Name="contentView">
+        <views:OneButtonContentView x:Name="contentView" ContinueButtonColor="{Binding ColorKey, Converter={converters:ColorKeyConverter}}">
             <views:OneButtonContentView.MainContent>
                 <views:SectionIntroView/>
             </views:OneButtonContentView.MainContent>

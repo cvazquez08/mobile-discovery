@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Onboarding.Views.OneButtonContentView">
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Onboarding.Views.OneButtonContentView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
     <ContentView.Content>
-        <Grid RowDefinitions="1*, Auto">
-        
-            <!-- main content (dynamically inserted by different pages) -->
+        <Grid RowDefinitions="1*,Auto">
+
+            <!--  main content  (dynamically inserted by different pages)  -->
             <ScrollView>
                 <StackLayout VerticalOptions="FillAndExpand">
                     <ContentView
@@ -15,22 +18,48 @@
                         VerticalOptions="FillAndExpand" />
                 </StackLayout>
             </ScrollView>
-            
+
+            <!--  budget summary view  -->
+            <StackLayout
+                x:Name="budgetSummary"
+                Margin="0"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="false"
+                Orientation="Horizontal"
+                Spacing="0"
+                VerticalOptions="Start">
+                <Frame
+                    Padding="0,24"
+                    HasShadow="True"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center">
+                    <!--budget summary goes here -->
+                    <Label Text="Budget Summary Here"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Center" />
+                </Frame>
+            </StackLayout>
+
+            <!--  floating exit button  -->
             <Button
-                Margin="24, 24"
+                Margin="24,24"
                 Padding="0"
                 BackgroundColor="Transparent"
+                Clicked="ExitClicked"
                 FontSize="20"
                 HeightRequest="25"
                 HorizontalOptions="Start"
                 Text="X"
                 TextColor="{StaticResource OnboardingBlue}"
                 VerticalOptions="Start"
-                WidthRequest="25"/>
-            
+                WidthRequest="25" />
+
+            <!--  continue button and syncing indicator  -->
             <StackLayout
+                x:Name="continueButtonSurroundLayout"
                 Grid.Row="1"
-                Padding="20,32"
+                Padding="24,32"
                 BackgroundColor="White"
                 VerticalOptions="EndAndExpand">
                 <Frame Padding="0">
@@ -39,9 +68,10 @@
                             x:Name="continueButton"
                             Margin="0"
                             Padding="0"
-                            BackgroundColor="{StaticResource OnboardingBlue}"
+                            BackgroundColor="Maroon"
                             Clicked="ContinueClicked"
                             HeightRequest="36"
+                            IsVisible="{Binding IsContinueButtonVisible, FallbackValue='true'}"
                             Text="Continue"
                             TextColor="White">
                             <Button.Triggers>
@@ -50,6 +80,31 @@
                                 </Trigger>
                             </Button.Triggers>
                         </Button>
+
+                        <!--  syncing indicator  -->
+                        <Grid BackgroundColor="{StaticResource OnboardingLightGray}" IsVisible="{Binding IsSyncingIndicatorVisible, FallbackValue='false'}">
+                            <ActivityIndicator
+                                Margin="12,0,0,0"
+                                HorizontalOptions="Start"
+                                IsRunning="true" />
+                            <StackLayout
+                                HorizontalOptions="CenterAndExpand"
+                                Orientation="Vertical"
+                                Spacing="0"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Center"
+                                    Text="Creating your budget"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    FontSize="10"
+                                    HorizontalOptions="Center"
+                                    Text="{Binding SyncingStatus, FallbackValue='budget creation'}"
+                                    TextTransform="Lowercase"
+                                    VerticalOptions="Center" />
+                            </StackLayout>
+                        </Grid>
                     </Grid>
                 </Frame>
             </StackLayout>

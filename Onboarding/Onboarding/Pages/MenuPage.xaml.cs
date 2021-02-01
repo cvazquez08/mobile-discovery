@@ -1,4 +1,3 @@
-
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
@@ -44,7 +43,7 @@ namespace Onboarding.Pages
             // TODO: VM
             BindingContext = this;
 
-            contentView.ContinueButtonAction = () => Navigation.PushAsync(new IncomePage(Dependencies.ProfileViewModel.Budget.IncomeGroup));
+            contentView.ContinueButtonAction = () => Navigation.PushAsync(new IncomeIntroPage(Dependencies.ProfileViewModel.Budget.IncomeGroup));
         }
 
         // TODO: move out

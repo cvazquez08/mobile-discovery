@@ -14,11 +14,15 @@ namespace Onboarding.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/SectionIntroView.xaml")]
-    public partial class SectionIntroView : global::Xamarin.Forms.ContentPage {
+    public partial class SectionIntroView : global::Xamarin.Forms.ContentView {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Image backgroundImage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SectionIntroView));
+            backgroundImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "backgroundImage");
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Onboarding.Pages
         {
             InitializeComponent();
 
-            contentView.ContinueButtonAction = () => Navigation.PushAsync(new GoalsPage(Dependencies.ProfileViewModel));
+            contentView.ContinueButtonAction = async () => await Navigation.PushAsync(new GoalsPage(Dependencies.ProfileViewModel));
         }
     }
 }

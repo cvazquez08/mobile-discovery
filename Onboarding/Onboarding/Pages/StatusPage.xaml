@@ -9,7 +9,7 @@
     BackgroundColor="{StaticResource OnboardingLightGray}"
     NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <views:OneButtonContentView x:Name="contentView">
+        <views:OneButtonContentView x:Name="contentView" ContinueButtonColor="{StaticResource OnboardingBlue}">
             <views:OneButtonContentView.MainContent>
                 <StackLayout>
                     <!--  Page title  -->
@@ -28,6 +28,7 @@
                         Text="(Choose all that apply.)" />
 
                     <!--  Goals 2 colum conatiner  -->
+                    <!--  TODO: abstract and unify this in goals/status  -->
                     <CollectionView
                         HorizontalOptions="Center"
                         ItemsSource="{Binding Status}"
